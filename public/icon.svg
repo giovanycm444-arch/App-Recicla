@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="ecoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="50%" stop-color="#059669" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+    <linearGradient id="leafGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#a7f3d0" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#064e3b" flood-opacity="0.3" />
+    </filter>
+  </defs>
+  
+  <!-- Background rounded rect -->
+  <rect width="512" height="512" rx="112" fill="url(#ecoGrad)" />
+  
+  <!-- Subtle accent circle -->
+  <circle cx="256" cy="256" r="180" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="6" stroke-dasharray="16 12" />
+  
+  <!-- Recycling Mobius Arrows with Leaf Center -->
+  <g filter="url(#shadow)" fill="none" stroke="#ffffff" stroke-width="26" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Top arrow loop -->
+    <path d="M 210 130 L 256 90 L 302 130" stroke-width="24" />
+    <path d="M 256 94 L 370 94 C 400 94 425 118 435 150 L 442 170" />
+    
+    <!-- Right-down arrow loop -->
+    <path d="M 445 270 L 445 320 L 395 320" stroke-width="24" />
+    <path d="M 440 315 L 360 410 C 340 430 310 440 280 440 L 220 440" />
+
+    <!-- Left-up arrow loop -->
+    <path d="M 130 370 L 85 360 L 95 310" stroke-width="24" />
+    <path d="M 90 355 L 90 240 C 90 205 110 170 145 150 L 195 125" />
+  </g>
+  
+  <!-- Center Leaf -->
+  <path d="M 256 185 C 295 210 320 250 315 295 C 275 325 215 315 195 275 C 190 230 225 195 256 185 Z" fill="url(#leafGrad)" />
+  <path d="M 220 290 Q 256 250 280 220" stroke="#047857" stroke-width="8" stroke-linecap="round" fill="none" />
+  
+  <!-- Sparkles -->
+  <circle cx="340" cy="180" r="10" fill="#fef08a" />
+  <circle cx="170" cy="330" r="8" fill="#fef08a" />
+</svg>
